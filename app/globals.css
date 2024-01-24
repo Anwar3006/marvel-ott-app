@@ -1,27 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@900&family=Spinnaker&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root{
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-bebas: 'Bebas Neue', sans-serif;
+    --font-spinnaker: 'Spinnaker', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html, body{
+    @apply bg-gradient-to-r from-red-500 from-5% to-purple-200 to-95% h-full overflow-x-hidden;
+}
+html, body{
+    font-family: var(--font-spinnaker);
+}
+.__next{
+    @apply h-full
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1{
+    font-family: var(--font-montserrat);
+}
+h2{
+    font-family: var(--font-spinnaker);
+}
+h3 {
+    font-family: var(--font-bebas);
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
 }
