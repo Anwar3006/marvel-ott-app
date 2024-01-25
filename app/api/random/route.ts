@@ -6,10 +6,10 @@ import redis from "@/lib/redisCache";
 import { Movie } from "@prisma/client";
 
 export const GET = async (req: NextRequest) => {
-  const { currentUser } = await serverAuth();
-  if (!currentUser) {
-    return NextResponse.redirect(new URL("/auth"));
-  }
+  // const { currentUser } = await serverAuth();
+  // if (!currentUser) {
+  //   return NextResponse.redirect(new URL("/auth"));
+  // }
 
   try {
     const movieCount = await prismadb.movie.count();

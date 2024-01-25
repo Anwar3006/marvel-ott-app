@@ -11,4 +11,4 @@ export function middleware(request: NextRequest) {
   return NextResponse.redirect(new URL("/auth", request.url));
 }
 
-export const config = { matcher: ["/", "/movies/:path*"] };
+export const config = { matcher: ["/movies/:path*"] };
