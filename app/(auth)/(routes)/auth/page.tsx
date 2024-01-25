@@ -59,9 +59,10 @@ const SignInLoginPage = () => {
         <nav className="bg-black bg-opacity-70 w-full z-10 px-12 py-5">
           <div className="flex items-center justify-center ">
             <Image
-              src="https://res.cloudinary.com/daffqurhi/image/upload/v1706047328/nwgrufbwwnuq0qd8vniy.jpg"
+              src="https://res.cloudinary.com/daffqurhi/image/upload/f_auto,q_auto/nwgrufbwwnuq0qd8vniy"
+              width={150}
+              height={200}
               alt="Logo"
-              className="h-10"
             />
           </div>
         </nav>

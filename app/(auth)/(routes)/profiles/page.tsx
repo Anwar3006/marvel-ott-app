@@ -52,8 +52,10 @@ const Profile = () => {
           className="flex flex-col items-center justify-center">
           <Image
             src="/images/Marvel.jpg"
+            width={500}
+            height={0}
             alt="Logo"
-            className="h-[8rem] md:h-[13rem] transition-transform duration-500"
+            className="h-[8rem] md:h-[10rem] transition-transform duration-500"
           />
           <p className="uppercase text-white font-semibold text-3xl md:text-5xl tracking-wider">
             Cinematic Universe
@@ -73,7 +75,12 @@ const Profile = () => {
                 group-hover:cursor-pointer
                 group-hover:border-white
               ">
-              <Image src="/images/default-green.png" alt="Profile" />
+              <Image
+                width={180}
+                height={100}
+                src="/images/default-green.png"
+                alt="Profile"
+              />
             </div>
           </div>
           <div className="text-3xl md:text-5xl text-center tracking-wider text-white group-hover:text-gray-300 mt-5">
