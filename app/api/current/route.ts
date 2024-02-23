@@ -5,6 +5,7 @@ import serverAuth from "@/lib/serverAuth";
 export const GET = async (req: NextRequest) => {
   try {
     const { currentUser } = await serverAuth();
+    console.log(currentUser);
     if (!currentUser) {
       return NextResponse.redirect(new URL("/auth"));
     }
