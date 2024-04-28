@@ -4,10 +4,10 @@ import serverAuth from "@/lib/serverAuth";
 import prismadb from "@/lib/prismadb";
 
 export const GET = async (req: NextRequest) => {
-  const { currentUser } = await serverAuth();
-  if (!currentUser) {
-    return new NextResponse("User not Signed In", { status: 401 });
-  }
+  // const { currentUser } = await serverAuth();
+  // if (!currentUser) {
+  //   return new NextResponse("User not Signed In", { status: 401 });
+  // }
 
   try {
     const { searchParams } = req.nextUrl;

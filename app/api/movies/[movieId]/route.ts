@@ -7,10 +7,10 @@ export const GET = async (
   req: NextRequest,
   { params }: { params: { movieId: string } }
 ) => {
-  const { currentUser } = await serverAuth();
-  if (!currentUser) {
-    return new NextResponse("User not Signed In", { status: 401 });
-  }
+  // const { currentUser } = await serverAuth();
+  // if (!currentUser) {
+  //   return new NextResponse("User not Signed In", { status: 401 });
+  // }
 
   const { movieId } = params;
   if (!movieId) {
