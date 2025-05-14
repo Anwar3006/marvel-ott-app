@@ -30,11 +30,6 @@ const HomeCards: React.FC<HomeCardsProps> = ({ title }) => {
     return <MovieSkeleton limit={6} />;
   }
 
-  // if (error) {
-  //   console.log("Error fetching movies", error);
-  //   return <p>Error loading movies.</p>;
-  // }
-
   const moviesToDisplay: Movie[] = allMovies.slice(0, 6);
   return (
     <div className="mt-4 md:mt-6 mx-auto px-4 sm:px-6 md:px-8">
@@ -43,7 +38,7 @@ const HomeCards: React.FC<HomeCardsProps> = ({ title }) => {
       </h2>
 
       <div className="mx-auto flex justify-center ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-5 lg:grid-cols-4 lg:gap-14 2xl:grid-cols-5 2xl:gap-6 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-5 lg:gap-8 2xl:grid-cols-5 2xl:gap-6 gap-3">
           {moviesToDisplay.map((movie: Movie) => (
             <MovieCard
               key={movie?.id}
@@ -58,7 +53,8 @@ const HomeCards: React.FC<HomeCardsProps> = ({ title }) => {
       <div className="w-full flex justify-center mt-4">
         <button
           onClick={() => router.push("/movies")}
-          className="bg-zinc-800 hover:cursor-pointer hover:bg-opacity-80 rounded-xl py-2 px-4 md:py-2 md:px-5 xl:px-7 xl:py-3 text-white md:font-semibold">
+          className="bg-zinc-800 hover:cursor-pointer hover:bg-opacity-80 rounded-xl py-2 px-4 md:py-2 md:px-5 xl:px-7 xl:py-3 text-white md:font-semibold"
+        >
           Load More!
         </button>
       </div>

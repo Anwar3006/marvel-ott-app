@@ -1,36 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@900&family=Spinnaker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@900&family=Spinnaker&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --font-montserrat: 'Montserrat', sans-serif;
-    --font-bebas: 'Bebas Neue', sans-serif;
-    --font-spinnaker: 'Spinnaker', sans-serif;
+:root {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-spinnaker: "Spinnaker", sans-serif;
 }
 
-html, body{
-    @apply bg-gradient-to-r from-red-500 from-5% to-purple-200 to-95% h-full overflow-x-hidden;
+html,
+body {
+  @apply bg-[#000]/80 to-95% h-full overflow-x-hidden;
 }
-html, body{
-    font-family: var(--font-spinnaker);
+html,
+body {
+  font-family: var(--font-spinnaker);
 }
-.__next{
-    @apply h-full
+.__next {
+  @apply h-full;
 }
 
-h1{
-    font-family: var(--font-montserrat);
+h1 {
+  font-family: var(--font-montserrat);
 }
-h2{
-    font-family: var(--font-spinnaker);
+h2 {
+  font-family: var(--font-spinnaker);
 }
 h3 {
-    font-family: var(--font-bebas);
+  font-family: var(--font-bebas);
 }
 
-.box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
 }
